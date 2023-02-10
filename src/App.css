@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App .main-body {
+  font-weight: 600;
+  font-size: 3vh;
+  background-color: #24272c;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App p {
+  color: #68fe9a;
+}
+.App h1 {
+  color: #fefaf1;
+}
+.App i {
+  color: #fefaf1;
+  font-size: 5vh;
+  padding-inline: 2vh;
+}
+.App .main-home i:hover {
+  color: #68fe9a;
+  font-size: 6vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.App .main-nav .main-home .link {
+  color: #fefaf1;
+}
+
+.App .main-body .home-image-box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #fefaf1, #68fe9a);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+  animation: bg-spin 3s linear infinite;
+}
+@-webkit-keyframes bg-spin {
   to {
-    transform: rotate(360deg);
+    --border-angle: 1turn;
   }
 }
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.home-image-box:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+/* .App .main-nav .nav-link .active Link:hover {
+  color: #68fe9a;
+} */
+
+/* .App .About {
+} */
