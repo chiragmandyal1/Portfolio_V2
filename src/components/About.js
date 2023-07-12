@@ -79,7 +79,7 @@ export default function About() {
               borderRadius: "1vh",
             }}
           >
-            <image
+            <img
               src={clgicon}
               className="img-fluid"
               alt="React Image"
@@ -122,7 +122,7 @@ export default function About() {
                       color: "white",
                     }}
                   >
-                    <image
+                    <img
                       src={renovus}
                       className="card-img-top"
                       alt="..."
@@ -183,7 +183,7 @@ export default function About() {
                       color: "white",
                     }}
                   >
-                    <image
+                    <img
                       src={crosscope}
                       className="card-img-top"
                       alt="..."
@@ -243,7 +243,7 @@ export default function About() {
                 <div className="col-sm">
                   <div className="col">
                     <div className="col-sm-6 text-center">
-                      <image
+                      <img
                         src={Js}
                         className="img-fluid"
                         alt="React Image"
@@ -277,7 +277,7 @@ export default function About() {
                 <div className="col-sm">
                   <div className="col">
                     <div className="col-sm-6 text-center">
-                      <image
+                      <img
                         src={ReactJs}
                         className="img-fluid"
                         alt="React Image"
@@ -311,7 +311,7 @@ export default function About() {
                 <div className="col-sm">
                   <div className="col">
                     <div className="col-sm-6 text-center">
-                      <image
+                      <img
                         src={NextJs}
                         className="img-fluid"
                         alt="React Image"
@@ -345,7 +345,7 @@ export default function About() {
                 <div className="col-sm">
                   <div className="col">
                     <div className="col-sm-6 text-center">
-                      <image
+                      <img
                         src={Git}
                         className="img-fluid"
                         alt="React Image"
@@ -390,7 +390,7 @@ export default function About() {
 }
 
 // <div className="col-sm">
-//   <image
+//   <img
 //     src={ReactJs}
 //     className="img-fluid"
 //     alt="React Image"
@@ -398,7 +398,7 @@ export default function About() {
 //   />
 // </div>
 // <div className="col-sm">
-//   <image
+//   <img
 //     src={}
 //     className="img-fluid"
 //     alt="React Image"

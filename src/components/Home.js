@@ -31,7 +31,7 @@ export default function Home() {
         <div className="row align-items-start">
           <div className="col-sm-6">
             <div className="home-image-box">
-              <image
+              <img
                 src={home}
                 className="img-fluid"
                 alt="React Image"
