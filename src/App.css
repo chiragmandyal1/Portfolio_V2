@@ -28,6 +28,13 @@
 }
 
 .App .main-body .home-image-box {
+  border-radius: 2px;
+  background-color: #68fe9a;
+}
+.App .main-body .home-image-box:hover {
+  box-shadow: 0 0 20px 1px white;
+}
+/*
   --border-size: 3px;
   --border-angle: 0turn;
 
@@ -45,7 +52,7 @@
   background-repeat: no-repeat;
   -webkit-animation: bg-spin 3s linear infinite;
   animation: bg-spin 3s linear infinite;
-}
+} */
 @-webkit-keyframes bg-spin {
   to {
     --border-angle: 1turn;
@@ -56,10 +63,10 @@
     --border-angle: 1turn;
   }
 }
-.home-image-box:hover {
+/* .home-image-box:hover {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
-}
+} */
 
 @property --border-angle {
   syntax: "<angle>";
